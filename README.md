@@ -6,4 +6,10 @@ Automação para o site https://nlw-kira-1.netlify.app/ - Criado na semana NLW -
 
 Cenário de acesso ao site e clique em Menu ok
 
+---
+
+2º Dia - Ajustando cenários que foram criados.
+
 ![Screenshop](Teste.png)
+
+---
