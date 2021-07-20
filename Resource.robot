@@ -10,16 +10,19 @@ ${URL}        https://nlw-kira-1.netlify.app/
 Abrir navegador
     Open Browser    ${URL}    ${BROWSER}
 
-
 Fechar navegador
     Close Browser
 
+Altera tamanho da janela para notebook
+    Set Window Size    1366    669
+
+Retorna para janela em Monitor
+    Set Window Size    1920    1080
 
 
 ### AÇÕES ###
 Acessar a página home
     Title Should Be    OriginSix
-
 
 Clicar na opção "${OPÇÃO}"
      Wait Until Element Is Visible    css=#header > nav > a

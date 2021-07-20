@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.8.5 on linux)" generated="20210627 01:33:05.773" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20210719 22:26:30.073" rpa="false" schemaversion="2">
 <suite id="s1" name="Test" source="/home/kira/Documentos/autNlw/test.robot">
 <test id="s1-t1" name="Caso 1: Acessar a sessão Sobre">
 <kw name="Abrir navegador" library="Resource" type="SETUP">
@@ -7,56 +7,56 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210627 01:33:05.954" level="INFO">Opening browser 'chrome' to base url 'https://nlw-kira-1.netlify.app/'.</msg>
-<status status="PASS" starttime="20210627 01:33:05.953" endtime="20210627 01:33:07.293"/>
+<msg timestamp="20210719 22:26:30.247" level="INFO">Opening browser 'chrome' to base url 'https://nlw-kira-1.netlify.app/'.</msg>
+<status status="PASS" starttime="20210719 22:26:30.247" endtime="20210719 22:26:33.522"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:05.952" endtime="20210627 01:33:07.294"/>
+<status status="PASS" starttime="20210719 22:26:30.246" endtime="20210719 22:26:33.524"/>
 </kw>
 <kw name="Acessar a página home" library="Resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>OriginSix</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20210627 01:33:07.315" level="INFO">Page title is 'OriginSix'.</msg>
-<status status="PASS" starttime="20210627 01:33:07.296" endtime="20210627 01:33:07.315"/>
+<msg timestamp="20210719 22:26:33.538" level="INFO">Page title is 'OriginSix'.</msg>
+<status status="PASS" starttime="20210719 22:26:33.527" endtime="20210719 22:26:33.538"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:07.295" endtime="20210627 01:33:07.315"/>
+<status status="PASS" starttime="20210719 22:26:33.525" endtime="20210719 22:26:33.538"/>
 </kw>
 <kw name="Clicar na opção &quot;Sobre&quot;" library="Resource" sourcename="Clicar na opção &quot;${OPÇÃO}&quot;">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=#header &gt; nav &gt; a</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210627 01:33:07.317" endtime="20210627 01:33:07.363"/>
+<status status="PASS" starttime="20210719 22:26:33.540" endtime="20210719 22:26:33.575"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="header"]//*[@class='toogle icon-menu']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210627 01:33:07.364" level="INFO">Clicking element 'xpath=//*[@id="header"]//*[@class='toogle icon-menu']'.</msg>
-<status status="PASS" starttime="20210627 01:33:07.363" endtime="20210627 01:33:07.432"/>
+<msg timestamp="20210719 22:26:33.576" level="INFO">Clicking element 'xpath=//*[@id="header"]//*[@class='toogle icon-menu']'.</msg>
+<status status="PASS" starttime="20210719 22:26:33.575" endtime="20210719 22:26:33.627"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:07.316" endtime="20210627 01:33:07.432"/>
+<status status="PASS" starttime="20210719 22:26:33.539" endtime="20210719 22:26:33.627"/>
 </kw>
 <kw name="Conferir se o título &quot;Sobre nós&quot; está sendo mostrado" library="Resource" sourcename="Conferir se o título &quot;${TÍTULO}&quot; está sendo mostrado">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//*[@id="header"]//a[@href='#about']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210627 01:33:07.434" endtime="20210627 01:33:07.762"/>
+<status status="PASS" starttime="20210719 22:26:33.628" endtime="20210719 22:26:33.933"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="header"]//a[@href='#about']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210627 01:33:07.763" level="INFO">Clicking element 'xpath=//*[@id="header"]//a[@href='#about']'.</msg>
-<status status="PASS" starttime="20210627 01:33:07.763" endtime="20210627 01:33:07.832"/>
+<msg timestamp="20210719 22:26:33.935" level="INFO">Clicking element 'xpath=//*[@id="header"]//a[@href='#about']'.</msg>
+<status status="PASS" starttime="20210719 22:26:33.934" endtime="20210719 22:26:34.010"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:07.433" endtime="20210627 01:33:07.832"/>
+<status status="PASS" starttime="20210719 22:26:33.628" endtime="20210719 22:26:34.010"/>
 </kw>
 <kw name="Fechar navegador" library="Resource" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210627 01:33:07.834" endtime="20210627 01:33:07.908"/>
+<status status="PASS" starttime="20210719 22:26:34.011" endtime="20210719 22:26:34.070"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:07.833" endtime="20210627 01:33:07.908"/>
+<status status="PASS" starttime="20210719 22:26:34.011" endtime="20210719 22:26:34.070"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:05.951" endtime="20210627 01:33:07.908"/>
+<status status="PASS" starttime="20210719 22:26:30.245" endtime="20210719 22:26:34.070"/>
 </test>
 <test id="s1-t2" name="Caso 2: Verificar os Depoimentos">
 <kw name="Abrir navegador" library="Resource" type="SETUP">
@@ -64,50 +64,50 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210627 01:33:07.913" level="INFO">Opening browser 'chrome' to base url 'https://nlw-kira-1.netlify.app/'.</msg>
-<status status="PASS" starttime="20210627 01:33:07.912" endtime="20210627 01:33:10.478"/>
+<msg timestamp="20210719 22:26:34.073" level="INFO">Opening browser 'chrome' to base url 'https://nlw-kira-1.netlify.app/'.</msg>
+<status status="PASS" starttime="20210719 22:26:34.073" endtime="20210719 22:26:48.443"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:07.912" endtime="20210627 01:33:10.479"/>
+<status status="PASS" starttime="20210719 22:26:34.072" endtime="20210719 22:26:48.444"/>
 </kw>
 <kw name="Acessar a página home" library="Resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>OriginSix</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20210627 01:33:10.492" level="INFO">Page title is 'OriginSix'.</msg>
-<status status="PASS" starttime="20210627 01:33:10.480" endtime="20210627 01:33:10.492"/>
+<msg timestamp="20210719 22:26:48.458" level="INFO">Page title is 'OriginSix'.</msg>
+<status status="PASS" starttime="20210719 22:26:48.447" endtime="20210719 22:26:48.458"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:10.479" endtime="20210627 01:33:10.493"/>
+<status status="PASS" starttime="20210719 22:26:48.445" endtime="20210719 22:26:48.458"/>
 </kw>
 <kw name="Clicar na opção &quot;Depoimentos&quot;" library="Resource" sourcename="Clicar na opção &quot;${OPÇÃO}&quot;">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=#header &gt; nav &gt; a</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210627 01:33:10.494" endtime="20210627 01:33:10.531"/>
+<status status="PASS" starttime="20210719 22:26:48.460" endtime="20210719 22:26:48.491"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="header"]//*[@class='toogle icon-menu']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210627 01:33:10.532" level="INFO">Clicking element 'xpath=//*[@id="header"]//*[@class='toogle icon-menu']'.</msg>
-<status status="PASS" starttime="20210627 01:33:10.532" endtime="20210627 01:33:10.582"/>
+<msg timestamp="20210719 22:26:48.492" level="INFO">Clicking element 'xpath=//*[@id="header"]//*[@class='toogle icon-menu']'.</msg>
+<status status="PASS" starttime="20210719 22:26:48.492" endtime="20210719 22:26:48.539"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:10.493" endtime="20210627 01:33:10.582"/>
+<status status="PASS" starttime="20210719 22:26:48.459" endtime="20210719 22:26:48.539"/>
 </kw>
 <kw name="Conferir se o depoimento de &quot;Bia Fray&quot; está sendo mostrado" library="Resource" sourcename="Conferir se o depoimento de &quot;${DEPOIMENTO}&quot; está sendo mostrado">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>xpath=//*[@id="testimonials"]/div/header/h2</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20210627 01:33:10.583" endtime="20210627 01:33:10.637"/>
+<status status="PASS" starttime="20210719 22:26:48.540" endtime="20210719 22:26:48.581"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:10.582" endtime="20210627 01:33:10.637"/>
+<status status="PASS" starttime="20210719 22:26:48.539" endtime="20210719 22:26:48.581"/>
 </kw>
 <kw name="Fechar navegador" library="Resource" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210627 01:33:10.639" endtime="20210627 01:33:10.704"/>
+<status status="PASS" starttime="20210719 22:26:48.582" endtime="20210719 22:26:48.641"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:10.638" endtime="20210627 01:33:10.704"/>
+<status status="PASS" starttime="20210719 22:26:48.581" endtime="20210719 22:26:48.641"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:07.910" endtime="20210627 01:33:10.704"/>
+<status status="PASS" starttime="20210719 22:26:34.071" endtime="20210719 22:26:48.641"/>
 </test>
 <test id="s1-t3" name="Caso 3: Entra em contato">
 <kw name="Abrir navegador" library="Resource" type="SETUP">
@@ -115,57 +115,57 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210627 01:33:10.708" level="INFO">Opening browser 'chrome' to base url 'https://nlw-kira-1.netlify.app/'.</msg>
-<status status="PASS" starttime="20210627 01:33:10.707" endtime="20210627 01:33:13.141"/>
+<msg timestamp="20210719 22:26:48.644" level="INFO">Opening browser 'chrome' to base url 'https://nlw-kira-1.netlify.app/'.</msg>
+<status status="PASS" starttime="20210719 22:26:48.644" endtime="20210719 22:26:51.368"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:10.706" endtime="20210627 01:33:13.141"/>
+<status status="PASS" starttime="20210719 22:26:48.643" endtime="20210719 22:26:51.369"/>
 </kw>
 <kw name="Acessar a página home" library="Resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>OriginSix</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20210627 01:33:13.159" level="INFO">Page title is 'OriginSix'.</msg>
-<status status="PASS" starttime="20210627 01:33:13.143" endtime="20210627 01:33:13.159"/>
+<msg timestamp="20210719 22:26:51.382" level="INFO">Page title is 'OriginSix'.</msg>
+<status status="PASS" starttime="20210719 22:26:51.371" endtime="20210719 22:26:51.382"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:13.142" endtime="20210627 01:33:13.159"/>
+<status status="PASS" starttime="20210719 22:26:51.370" endtime="20210719 22:26:51.383"/>
 </kw>
 <kw name="Clicar na opção &quot;Contato&quot;" library="Resource" sourcename="Clicar na opção &quot;${OPÇÃO}&quot;">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=#header &gt; nav &gt; a</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210627 01:33:13.161" endtime="20210627 01:33:13.204"/>
+<status status="PASS" starttime="20210719 22:26:51.385" endtime="20210719 22:26:51.418"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="header"]//*[@class='toogle icon-menu']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210627 01:33:13.205" level="INFO">Clicking element 'xpath=//*[@id="header"]//*[@class='toogle icon-menu']'.</msg>
-<status status="PASS" starttime="20210627 01:33:13.204" endtime="20210627 01:33:13.260"/>
+<msg timestamp="20210719 22:26:51.419" level="INFO">Clicking element 'xpath=//*[@id="header"]//*[@class='toogle icon-menu']'.</msg>
+<status status="PASS" starttime="20210719 22:26:51.418" endtime="20210719 22:26:51.472"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:13.160" endtime="20210627 01:33:13.260"/>
+<status status="PASS" starttime="20210719 22:26:51.383" endtime="20210719 22:26:51.472"/>
 </kw>
 <kw name="Clicar no botão &quot;Entra em contato&quot;" library="Resource" sourcename="Clicar no botão &quot;${BOTÃO}&quot;">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>css=#contact &gt; div &gt; div.text &gt; h2</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20210627 01:33:13.261" endtime="20210627 01:33:13.298"/>
+<status status="PASS" starttime="20210719 22:26:51.473" endtime="20210719 22:26:51.510"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>css=#contact &gt; div &gt; div.text &gt; a</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20210627 01:33:13.298" endtime="20210627 01:33:13.329"/>
+<status status="PASS" starttime="20210719 22:26:51.510" endtime="20210719 22:26:51.540"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:13.261" endtime="20210627 01:33:13.329"/>
+<status status="PASS" starttime="20210719 22:26:51.473" endtime="20210719 22:26:51.541"/>
 </kw>
 <kw name="Fechar navegador" library="Resource" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210627 01:33:13.330" endtime="20210627 01:33:13.391"/>
+<status status="PASS" starttime="20210719 22:26:51.542" endtime="20210719 22:26:51.599"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:13.329" endtime="20210627 01:33:13.394"/>
+<status status="PASS" starttime="20210719 22:26:51.541" endtime="20210719 22:26:51.599"/>
 </kw>
-<status status="PASS" starttime="20210627 01:33:10.705" endtime="20210627 01:33:13.394"/>
+<status status="PASS" starttime="20210719 22:26:48.642" endtime="20210719 22:26:51.599"/>
 </test>
-<status status="PASS" starttime="20210627 01:33:05.775" endtime="20210627 01:33:13.397"/>
+<status status="PASS" starttime="20210719 22:26:30.074" endtime="20210719 22:26:51.601"/>
 </suite>
 <statistics>
 <total>
