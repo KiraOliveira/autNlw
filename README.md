@@ -13,3 +13,7 @@ Cenário de acesso ao site e clique em Menu ok
 ![Screenshop](Teste.png)
 
 ---
+
+---
+
+3º Dia - Ajustando tamanho da tela
